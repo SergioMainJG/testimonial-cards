@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
+/* 100 */
+/* 300 */
+/* 400 */
+/* 500 */
+/* 700 */
+.main-title {
+  text-align: center;
+  font-weight: 700;
+}
+.second-title {
+  text-align: center;
+  font-weight: 500;
+}
+.generic-user {
+  text-align: left;
+  font-weight: 300;
+}
+.user-job {
+  text-align: left;
+  font-weight: 100;
+}
+p {
+  text-align: left;
+  font-weight: 400;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat( 2, minmax(3rem, 1fr) );
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "testimoniaFirst testimoniaSecond"
+    "mainTestimonia mainTestimonia"
+    "carousel carousel";
+  gap: 1rem;
+  width: 80%;
+}
+.first-testimonia {
+  grid: testimoniaFirst;
+  width: 25em;
+}
+.first-testimonia p {
+  width: 100%;
+}
+.users-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.users-info img {
+  aspect-ratio: 1/1;
+  width: 3.5em;
+  border-radius: 50%;
+}
+.second-testimonia {
+  grid: testimoniaSecond;
+}
+.second-testimonia p {
+  width: 100%;
+}
+.main-testimonia{
+    grid: mainTestimonia;
+    width: ;
+}
